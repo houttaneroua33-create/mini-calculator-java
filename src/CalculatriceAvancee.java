@@ -10,4 +10,11 @@ public class CalculatriceAvancee {
         }
         return Math.sqrt(a);
     }
+
+    public int modulo(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Division par zero");
+        }
+        return a % b;
+    }
 }
