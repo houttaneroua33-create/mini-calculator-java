@@ -17,4 +17,14 @@ public class CalculatriceAvancee {
         }
         return a % b;
     }
+        public long factorielle(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Nombre negatif");
+        }
+        long resultat = 1;
+        for (int i = 2; i <= n; i++) {
+            resultat *= i;
+        }
+        return resultat;
+    }
 }
